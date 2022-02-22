@@ -26,22 +26,18 @@ const channelListItem = [
 let rtcPeerConnection = null
 const iceServers = {
   iceServers: [
-    { urls: "stun:stun.l.google.com:19302" },
     {
-      url: "turn:numb.viagenie.ca",
-      credential: "muazkh",
-      username: "webrtc@live.com",
+      urls: ["stun:bn-turn1.xirsys.com"],
     },
     {
-      url: "turn:192.158.29.39:3478?transport=udp",
-      credential: "JZEOEt2V3Qb0y27GRntt2u2PAYA=",
-      username: "28224511:1379330808",
+      username:
+        "TMCV3d7B7AimeSUzLVnrz2tjUNg0Rl8QUT4YZCTig-gr-758XpydDuUtNP-WKCVsAAAAAGIUqv5zaGd1cHRhOTg=",
+      credential: "c11a67d4-93c0-11ec-a556-0242ac140004",
+      urls: [
+        "turn:bn-turn1.xirsys.com:80?transport=udp",
+        "turn:bn-turn1.xirsys.com:80?transport=tcp",
+      ],
     },
-    {
-      url: "turn:192.158.29.39:3478?transport=tcp",
-      credential: "JZEOEt2V3Qb0y27GRntt2u2PAYA=",
-      username: "28224511:1379330808",
-    }
   ],
 };
 
